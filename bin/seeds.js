@@ -14,13 +14,13 @@ mongoose
     console.error("Error connecting to mongo: ", err);
   });
 
+
 const messier = [
   {
-    recordId: "474a5c477d3fb4561ce50db7a500b658d4276ab5",
     ngc: "NGC 1952",
     latinName: "Taurus",
     mag: 8,
-    messier: "M1",
+    messier: "M01",
     distance: 6500,
     englishName: "Bull",
     dec: "+22:00:52.1",
@@ -37,7 +37,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "a5e6f14ba70225c1b1445bef89953ef99ecc57ac",
     ngc: "NGC 7089",
     latinName: "Aquarius",
     mag: 6,
@@ -57,7 +56,6 @@ const messier = [
     score: 0,
   },
   {
-    recordId: "f6bab809048e34b438fa77c5e142a149451094b1",
     ngc: "NGC 5272",
     latinName: "Canes Venatici",
     mag: 6,
@@ -77,7 +75,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "4711300aca00784a458bda46fe99907dba2e595f",
     ngc: "NGC 6121",
     latinName: "Scorpius",
     mag: 5,
@@ -98,7 +95,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "f9966a70c362bbee6a4bfcc080a63638b44491df",
     ngc: "NGC 5904",
     mag: 5,
     messier: "M5",
@@ -116,7 +112,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "9cd8e4f0feb46bd6e414061f2b6171f9e3bcf6c5",
     ngc: "NGC 6504",
     latinName: "Scorpius",
     mag: 4,
@@ -136,7 +131,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "67e0d0086d756529aa16bd3a3bd5b56bf634aaab",
     ngc: "NGC 6475",
     latinName: "Scorpius",
     mag: 3,
@@ -156,7 +150,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "541f12b0672cd4f6a9887cccecdcbc3aa381fb34",
     ngc: "NGC 6523",
     latinName: "Sagittarius",
     mag: 5,
@@ -176,7 +169,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "175a62ddc515be7ad77106908aba59e8caf5aa03",
     ngc: "NGC 6333",
     latinName: "Ophiuchus",
     mag: 7,
@@ -197,7 +189,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "049bf2f3452e44ff4549ef97559eaabe4235fb7c",
     ngc: "NGC 6254",
     latinName: "Ophiuchus",
     mag: 6,
@@ -217,7 +208,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "5c20f3a7ed2c2ccdf8610308eedd414e782aded8",
     ngc: "NGC 6705",
     latinName: "Scutum",
     mag: 5,
@@ -237,7 +227,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "12b793e3c681416a14a75b9d898109a3bb033bcf",
     ngc: "NGC 6218",
     latinName: "Ophiuchus",
     mag: 6,
@@ -257,7 +246,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "58873094dea8a324acb3e883dbea07f3489b7dcd",
     ngc: "NGC 6205",
     latinName: "Hercules",
     mag: 5,
@@ -277,7 +265,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "6cc91740187da27131e8922a12a50aa44add9f8c",
     ngc: "NGC 6402",
     latinName: "Ophiuchus",
     mag: 7,
@@ -297,7 +284,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "b5c377ae83265de71ae922f56f1dc31a5d0af808",
     ngc: "NGC 7078",
     latinName: "Pegasus",
     mag: 6,
@@ -317,7 +303,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "62e0c1628c18d2cecd5a104833f2cb9cf4019bfa",
     ngc: "NGC 6611",
     mag: 6,
     messier: "M16",
@@ -335,7 +320,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "de7f6e6fb1489d10fa53b04e69ec13d88b6b6525",
     ngc: "NGC 6618",
     latinName: "Sagittarius",
     mag: 6,
@@ -356,7 +340,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "d6e93275af7f067739c4c102723ca12bef0ba7a4",
     ngc: "NGC 6613",
     latinName: "Sagittarius",
     mag: 6,
@@ -376,7 +359,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "8dbc0bc4381a046881153ff7e57d8ec595d4fcb2",
     ngc: "NGC 6273",
     latinName: "Ophiuchus",
     mag: 7,
@@ -396,7 +378,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "5fbe44fdf5659dc5f3b6616879ae2827fa785c74",
     ngc: "NGC 6514",
     latinName: "Sagittarius",
     mag: 6,
@@ -416,7 +397,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "bf8a3b52d304ee597160b0b38e48a9baac7da14a",
     ngc: "NGC 6531",
     latinName: "Sagittarius",
     mag: 5,
@@ -436,7 +416,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "cd02f3ce6e628f66bea762a6897242cd1cea582c",
     ngc: "NGC 6656",
     latinName: "Sagittarius",
     mag: 5,
@@ -456,7 +435,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "669d15b09eb016ae8916cb427e633744ad3604f1",
     ngc: "NGC 6494",
     latinName: "Sagittarius",
     mag: 5,
@@ -476,7 +454,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "8216d7c80e624c25037eddfd57b5d49963bc2f4b",
     ngc: "NGC 6603",
     latinName: "Sagittarius",
     mag: 11,
@@ -497,7 +474,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "b70a8f1742eb9e93924fbab9d7d3c43d926d2b19",
     ngc: "IC4725",
     latinName: "Sagittarius",
     mag: 4,
@@ -517,7 +493,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "e89adad0ccd1776cff70ebdef7513c472d3f555f",
     ngc: "NGC 6694",
     latinName: "Scutum",
     mag: 8,
@@ -537,7 +512,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "639f792ca54b38f664b558943a986024b1cee254",
     ngc: "NGC 6853",
     latinName: "Vulpecula",
     mag: 8,
@@ -557,7 +531,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "2ab6ebd2d2756d678b215ea3b0d69d48e7c64338",
     ngc: "NGC 6626",
     latinName: "Sagittarius",
     mag: 6,
@@ -578,7 +551,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "c3496d3f5fe7cea72b0fe2f9baa28feaf7eff791",
     ngc: "NGC 6913",
     latinName: "Cygnus",
     mag: 6,
@@ -598,7 +570,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "4e3de8cdf703e90ffff2bb163d435c95638fdc31",
     ngc: "NGC 7099",
     latinName: "Capricornus",
     mag: 7,
@@ -618,7 +589,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "989b38b45acaf01958f343c26cf04467ee091387",
     ngc: "NGC 224",
     latinName: "Andromeda",
     mag: 3,
@@ -638,7 +608,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "0dcdd3c78b8558ce153231f09e86a53389222480",
     ngc: "NGC 221",
     latinName: "Andromeda",
     mag: 8,
@@ -657,7 +626,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "70029ae1ed26cdddc0b042eb424b24eb69b353ce",
     ngc: "NGC 598",
     latinName: "Triangulum",
     mag: 5,
@@ -677,9 +645,7 @@ const messier = [
     difficulty: "hard",
     score: 30,
   },
-
   {
-    recordId: "74dd035b8e3f0939adc7fdf89ec6212ab6b185d2",
     ngc: "NGC 1039",
     latinName: "Perseus",
     mag: 5,
@@ -699,7 +665,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "308f7b51f801d9eb87eda212fc9312f7c6b5d5a8",
     ngc: "NGC 2168",
     latinName: "Gemini",
     mag: 5,
@@ -719,7 +684,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "30e2b12cdbb38d2dae6a79261c809b3839fec934",
     ngc: "NGC 1960",
     latinName: "Auriga",
     mag: 6,
@@ -739,7 +703,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "d668760d5ac4e80fdf0b17dc72c697e6cb8345ce",
     ngc: "NGC 2099",
     latinName: "Auriga",
     mag: 5,
@@ -759,7 +722,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "30b961fe2cc39b412fcf46952b12677f3457200a",
     ngc: "NGC 1912",
     latinName: "Auriga",
     mag: 6,
@@ -779,7 +741,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "fb2479b25724a2834021237f7ed1cd5d6811d4f0",
     ngc: "NGC 7092",
     latinName: "Cygnus",
     mag: 4,
@@ -799,7 +760,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "65abba2f90d219671c1b2cfec5a2a604e45c4277",
     season: "Spring",
     discoveredBy: "Hevelius",
     object: "Double star",
@@ -813,7 +773,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "fb83e2388fa0677bdd7a888bbab2bf6c60339aba",
     ngc: "NGC 2287",
     latinName: "Canis Major",
     mag: 4,
@@ -833,7 +792,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "4ec02d3de216100fcc434a46dfc7c2d8e429f8c1",
     ngc: "NGC 9176",
     latinName: "Orion",
     mag: 4,
@@ -854,7 +812,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "eaff5833bfb82f43a48e65c97151d0d3eb170790",
     ngc: "NGC 1982",
     latinName: "Orion",
     mag: 9,
@@ -874,7 +831,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "9eac3f15615dad9a4adbb9fbbfb4e0a367ad3805",
     ngc: "NGC 2632",
     latinName: "Cancer",
     mag: 3,
@@ -893,7 +849,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "4ac0891fc54ea74d4b8f122556931c5820c00478",
     dimension: "120,0'",
     season: "Winter",
     object: "Open Cluster",
@@ -908,7 +863,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "6c60248c08580e6b00fbd15fc64b678bcb554518",
     ngc: "NGC 2437",
     latinName: "Puppis",
     mag: 6,
@@ -928,7 +882,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "4d0bdba81ca8120092e5cfd5e5c58bf22347c51f",
     ngc: "NGC 2422",
     latinName: "Puppis",
     mag: 4,
@@ -948,7 +901,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "ad604cb621492d541c5b078f7d7479cad3ae45dc",
     ngc: "NGC 2548",
     latinName: "Hydra",
     mag: 5,
@@ -968,7 +920,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "b93b06165946877ab2d01c5fbf7b15f4c9765eb0",
     ngc: "NGC 4472",
     latinName: "Virgo",
     mag: 8,
@@ -988,7 +939,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "c56c9f200c2aa5711548ae997bab7866912eadbc",
     ngc: "NGC 2323",
     latinName: "Monoceros",
     mag: 5,
@@ -1008,7 +958,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "ce6e4ccc420e6bd76d9ebdf951011120f751ea32",
     ngc: "NGC 5194",
     latinName: "Canes Venatici",
     mag: 8,
@@ -1028,7 +977,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "28b51b1bde9ad3b74a9d733c6d821b86d2d78596",
     ngc: "NGC 7654",
     latinName: "Cassiopeia",
     mag: 6,
@@ -1048,7 +996,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "de85fd4bf4ba6c585ce7a526753e51dade84c6c2",
     ngc: "NGC 5024",
     latinName: "Coma Berenices",
     mag: 7,
@@ -1068,7 +1015,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "360820525445f8b820bfe076a85c620c061733a5",
     ngc: "NGC 6715",
     latinName: "Sagittarius",
     mag: 7,
@@ -1088,7 +1034,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "29d04f1e87ccf3c9e5a843b7da6edbefb3af1e71",
     ngc: "NGC 6809",
     latinName: "Sagittarius",
     mag: 7,
@@ -1108,7 +1053,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "b58c3798522520b494e3b482bce8e01b9a6031bb",
     ngc: "NGC 6779",
     latinName: "Lyra",
     mag: 8,
@@ -1128,7 +1072,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "bd1bb27eef17011a31adc4aea90555eef6bbb5b0",
     ngc: "NGC 6720",
     latinName: "Lyra",
     mag: 9,
@@ -1148,7 +1091,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "72ceba7f9ed12c0c02180c086e4b98af5c869b90",
     ngc: "NGC 4579",
     latinName: "Virgo",
     mag: 9,
@@ -1168,7 +1110,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "f7e5591290b9e9b7cf126919a8d2b12faabbcee6",
     ngc: "NGC 4621",
     latinName: "Virgo",
     mag: 9,
@@ -1188,7 +1129,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "f9ca8dcf4e7d122f9831f178eafa8d70ef91572f",
     ngc: "NGC 4649",
     latinName: "Virgo",
     mag: 8,
@@ -1208,7 +1148,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "1e68cb201748947cf8dbdf676c0f8d6c05ecd4ac",
     ngc: "NGC 4303",
     latinName: "Virgo",
     mag: 9,
@@ -1228,7 +1167,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "84c799723cfa16d28e1448c98440e66f9f0a7c84",
     ngc: "NGC 6266",
     latinName: "Ophiuchus",
     mag: 6,
@@ -1248,7 +1186,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "aada6474e7e3a7112ffa454a3e49e5009b45af79",
     ngc: "NGC 5055",
     latinName: "Canes Venatici",
     mag: 8,
@@ -1268,7 +1205,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "b5ca90dbb48a4c05232d6c46c95ae97bb370451a",
     ngc: "NGC 4826",
     latinName: "Coma Berenices",
     mag: 8,
@@ -1288,7 +1224,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "38f137fc167903f4ac3024776d0e91a7bab5e3bf",
     ngc: "NGC 3623",
     latinName: "Leo",
     mag: 9,
@@ -1308,7 +1243,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "7d320f644fc7d09c85cacc130826694118b7dea2",
     ngc: "NGC 3627",
     latinName: "Leo",
     mag: 9,
@@ -1328,7 +1262,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "aa7a42303eb3ad184038c4f943f04e584287c62b",
     ngc: "NGC 2682",
     latinName: "Cancer",
     mag: 6,
@@ -1348,7 +1281,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "89670f7e191f09c2c610a8ca53fd6a6e673d8cf0",
     ngc: "NGC 4590",
     latinName: "Hydra",
     mag: 8,
@@ -1368,7 +1300,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "ae6fda985899174e5a0d5fb27fbaff73bd2cb35a",
     ngc: "NGC 6637",
     latinName: "Sagittarius",
     mag: 7,
@@ -1388,7 +1319,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "3a30daa6df575f943d43ca385d047270f83bf0ae",
     ngc: "NGC 6681",
     latinName: "Sagittarius",
     mag: 8,
@@ -1408,7 +1338,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "a9f07a5cd5013bdc68b040686e71e4b14d9dc2a0",
     ngc: "NGC 6838",
     latinName: "Sagitta",
     mag: 8,
@@ -1428,7 +1357,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "c1c0cf675326663246626cbb6351299afbb63c20",
     ngc: "NGC 6981",
     latinName: "Aquarius",
     mag: 9,
@@ -1448,7 +1376,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "72f3b097fa8f73d84a9f5573bc4a8523dda31b47",
     ngc: "NGC 6994",
     latinName: "Aquarius",
     mag: 9,
@@ -1467,7 +1394,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "7840a5185db060dcc0c219ca1267be947c80bc8d",
     ngc: "NGC 628",
     latinName: "Pisces",
     mag: 9,
@@ -1487,7 +1413,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "6fb430b817b86b37240f8f318192f462c6eeb56b",
     ngc: "NGC 6864",
     latinName: "Sagittarius",
     mag: 8,
@@ -1507,7 +1432,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "cb160838a0c6a54585a2f03b2781d6fd1c64a217",
     ngc: "NGC 650",
     latinName: "Perseus",
     mag: 10,
@@ -1528,7 +1452,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "5da1eeaef215fb3e6f354d67f77a6e4e1368c411",
     ngc: "NGC 1068",
     latinName: "Cetus",
     mag: 8,
@@ -1549,7 +1472,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "312167088175b1aedcaf589d78110b1ae744cced",
     ngc: "NGC 2068",
     latinName: "Orion",
     mag: 8,
@@ -1569,7 +1491,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "f987515dadff6877b63134e571d146a85847cbaa",
     ngc: "NGC 1904",
     latinName: "Lepus",
     mag: 8,
@@ -1589,7 +1510,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "5a0e0f94c780319a47fe86f05d539c0b44629655",
     ngc: "NGC 6093",
     latinName: "Scorpius",
     mag: 7,
@@ -1610,7 +1530,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "94859a7addaa23df0fe0f69b4bdf0a54498bdc0d",
     ngc: "NGC 3031",
     latinName: "Ursa Major",
     mag: 6,
@@ -1630,7 +1549,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "c96cc8d69f2c9718f0fc940e88db4d4a60bf4c14",
     ngc: "NGC 3034",
     latinName: "Ursa Major",
     mag: 8,
@@ -1650,7 +1568,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "d47a40e343ae0021eaefc8140b31de7646260e33",
     ngc: "NGC 5236",
     latinName: "Hydra",
     mag: 7,
@@ -1670,7 +1587,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "cbdfffff3c6570c796121bc90dd6976c75b98462",
     ngc: "NGC 4374",
     latinName: "Virgo",
     mag: 9,
@@ -1690,7 +1606,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "5c46ca0f8251b16d0894e276a3990104686d8f1d",
     ngc: "NGC 4382",
     latinName: "Coma Berenices",
     mag: 9,
@@ -1710,7 +1625,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "0e3e6ef88b90fda5d93874323da9cc4a30af3648",
     ngc: "NGC 4406",
     latinName: "Virgo",
     mag: 9,
@@ -1730,7 +1644,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "93bfd492e9a29519ba50c152095939dbe6f38397",
     ngc: "NGC 4486",
     latinName: "Virgo",
     mag: 8,
@@ -1750,7 +1663,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "70d12871392388489a0ef27afd589d7e4a74087c",
     ngc: "NGC 4501",
     latinName: "Coma Berenices",
     mag: 9,
@@ -1770,7 +1682,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "00f22385373cd4984aab0dc46faf7c269aed8bc7",
     ngc: "NGC 4552",
     latinName: "Virgo",
     mag: 9,
@@ -1790,7 +1701,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "3a2c6caa9e7961e3a9c96b700ded60f63edb09fe",
     ngc: "NGC 4560",
     latinName: "Virgo",
     mag: 9,
@@ -1811,7 +1721,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "7e4c1cf3b2a46e7fcf200836458e22dea835a247",
     ngc: "NGC 4548",
     latinName: "Coma Berenices",
     mag: 10,
@@ -1831,7 +1740,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "253d9c09aede7c59fdcca28e15df0cba0199b502",
     ngc: "NGC 6341",
     latinName: "Hercules",
     mag: 6,
@@ -1851,7 +1759,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "59ca87a232670caf14b2d78ffedba001c56abb18",
     ngc: "NGC 2447",
     latinName: "Puppis",
     mag: 6,
@@ -1871,7 +1778,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "2fffb7ef8521c24d65b61ddd59e89338d068ed33",
     ngc: "NGC 4736",
     latinName: "Canes Venatici",
     mag: 8,
@@ -1891,7 +1797,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "97dca12c94a942e4a705d385b3789f7b413cbcde",
     ngc: "NGC 3351",
     latinName: "Leo",
     mag: 9,
@@ -1911,7 +1816,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "0be1e70736bf4b50b61b80f681cc632ab761a771",
     ngc: "NGC 3368",
     latinName: "Leo",
     mag: 9,
@@ -1931,7 +1835,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "117d04010ac443aa0b6cc68478d17cf820a150d6",
     ngc: "NGC 3587",
     latinName: "Ursa Major",
     mag: 11,
@@ -1951,7 +1854,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "54d6807910bcab31e24fe7d35438ee13a956fb02",
     ngc: "NGC 4192",
     latinName: "Coma Berenices",
     mag: 10,
@@ -1971,7 +1873,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "0a4d6e998446e99fd6e6e90401a8e2ce825a064b",
     ngc: "NGC 4254",
     latinName: "Coma Berenices",
     mag: 9,
@@ -1991,7 +1892,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "e8abdfd4f3d132a4f99f75e9ff10d508d3f2b43b",
     ngc: "NGC 4321",
     latinName: "Coma Berenices",
     mag: 9,
@@ -2012,7 +1912,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "be63ccade50692c9fe414f04fb54c60c20032fa9",
     ngc: "NGC 5457",
     latinName: "Ursa Major",
     mag: 7,
@@ -2033,7 +1932,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "0ebf3d10cb0145d80a354c35a123d04547e13b9b",
     dimension: "5,2' x 2,3'",
     season: "Spring",
     discoveredBy: "Méchain",
@@ -2049,7 +1947,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "f4d81807918cac30842aaea55affb9f95b185f41",
     ngc: "NGC 581",
     latinName: "Cassiopeia",
     mag: 7,
@@ -2069,7 +1966,6 @@ const messier = [
     score: 5,
   },
   {
-    recordId: "2d8df4c16bece39640643bcc1f3f506a5a3a6e9b",
     ngc: "NGC 4594",
     latinName: "Corvus",
     mag: 8,
@@ -2090,7 +1986,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "4bec0c91896e4830e1d9b5f79df021b55b949e1f",
     ngc: "NGC 3379",
     latinName: "Leo",
     mag: 9,
@@ -2111,7 +2006,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "b4feffd7a52b297c5b76c325253c488a9ca868bb",
     ngc: "NGC 4258",
     latinName: "Canes Venatici",
     mag: 8,
@@ -2131,7 +2025,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "89b6602da3c4d09b73b6d2069e73756720549ea4",
     ngc: "NGC 6171",
     latinName: "Ophiuchus",
     mag: 8,
@@ -2151,7 +2044,6 @@ const messier = [
     score: 15,
   },
   {
-    recordId: "24b23c418b9688e6d57e5cdfa76632f512487449",
     ngc: "NGC 3556",
     latinName: "Ursa Major",
     mag: 10,
@@ -2172,7 +2064,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "9588bfcb157762a61ec87d7bfe9819cef8502938",
     ngc: "NGC 3992",
     latinName: "Ursa Major",
     mag: 9,
@@ -2193,7 +2084,6 @@ const messier = [
     score: 30,
   },
   {
-    recordId: "4d5d402e83ef5f53ca8df305b781724e7898350c",
     ngc: "NGC 205",
     latinName: "Andromeda",
     mag: 8,
@@ -2213,6 +2103,8 @@ const messier = [
     score: 30,
   },
 ];
+
+
 
 AstroObject.create(messier)
   .then((data) => {

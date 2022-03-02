@@ -2,7 +2,6 @@ const { Schema, model } = require("mongoose");
 
 const astroObjectSchema = new Schema(
   {
-    recordId: String,
     ngc: String,
     latinName: String,
     mag: Number,
