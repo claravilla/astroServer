@@ -6,10 +6,7 @@ const commentSchema = new Schema(
       type: String,
       required: true,
     },
-    username: {
-      type: String,
-      required: true,
-    },
+    username: String,
     text: {
       type: String,
       required: true,
