@@ -10,60 +10,48 @@ const saltRounds = 10;
 router.post("/signup", (req, res, next) => {
   const { username, email, password } = req.body;
 
-  if (!email || !password) {
-    return res
-      .status(400)
-      .json({ message: "Please provide all required fields" });
+  if (!username || !email || !password) {
+    res.status(400).json({ error: "Please fill all required fields" });
+    return;
   }
 
   if (password.length < 6) {
-    return res
-      .status(400)
-      .json({ message: "Your password must be at least 6 characters" });
+    res.status(400).json({ error: "Password must be at least 6 characters" });
+    return;
   }
 
-  //checking is user submitted a username, and if so, if already exists.
-  //username is not enforced in the model to be unique
-
-  if (username) {
-    User.findOne({ username: username }).then((foundUser) => {
+  User.findOne({ username: username })
+    .then((foundUser) => {
       if (foundUser) {
-        return res.status(400).json({ message: "Username already exists" });
+        res.status(400).json({ error: "Username already taken" });
+        return;
       }
-      return;
-    });
-  }
+      User.findOne({ email: email }).then((foundUser) => {
+        if (foundUser) {
+          res.status(400).json({ error: "Email already taken" });
+          return;
+        }
 
-  User.findOne({ email: email })
-    .then((userFound) => {
-      if (userFound) {
-        return res.status("200").json({ message: "Email already exists" });
-      }
-
-      const salt = bcrypt.genSaltSync(saltRounds);
-      const hashPassword = bcrypt.hashSync(password, salt);
-
-      return User.create({
-        username: username,
-        email: email,
-        password: hashPassword,
-      });
-    })
-    .then((newUser) => {
-      const { username, email, _id } = newUser;
-      const user = {
-        username,
-        email,
-        _id,
-      };
-
-      return res.status("200").json({
-        message: `user: ${user.username}, email: ${user.email} has been created`,
+        const salt = bcrypt.genSaltSync(saltRounds);
+        const hashedPassword = bcrypt.hashSync(password, salt);
+        return User.create({
+          username: username,
+          email: email,
+          password: hashedPassword,
+        }).then((newUser) => {
+          const { username, email, _id } = newUser;
+          const user = {
+            username,
+            email,
+            _id,
+          };
+          res.status(201).json({ user: user });
+        });
       });
     })
     .catch((error) => {
       console.log(error);
-      next(error);
+      res.status(500).json({ error: "Internal server error" });
     });
 });
 
