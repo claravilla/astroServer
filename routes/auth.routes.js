@@ -62,15 +62,17 @@ router.post("/login", (req, res, next) => {
 
   if (!email || !password) {
     res.status(400).json({ message: "Please provide all mandatory fields" });
+    return;
   }
 
   //check if email exists
 
   User.findOne({ email: email }).then((foundUser) => {
     if (!foundUser) {
-      return res
+      res
         .status(401)
         .json({ message: "We couldn't log you in with those credentials" });
+      return;
     }
 
     if (bcrypt.compareSync(password, foundUser.password)) {
@@ -89,11 +91,9 @@ router.post("/login", (req, res, next) => {
         expiresIn: "1d",
       });
 
-      console.log(token);
-
       res.status(200).json({ authToken: token });
     } else {
-      return res
+      res
         .status(401)
         .json({ message: "We couldn't log you in with those credentials" });
     }
