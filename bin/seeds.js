@@ -32,7 +32,7 @@ const messier = [
     commonName: "Crab Nebula",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/crab-nebula-mosaic.jpg?itok=DNaRmPtc",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -51,7 +51,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M002.JPG",
     commonName: "",
     image: "https://www.nasa.gov/sites/default/files/thumbnails/image/m2.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 0,
   },
   {
@@ -70,7 +70,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M003.JPG",
     commonName: "",
     image: "https://www.nasa.gov/sites/default/files/thumbnails/image/m2.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -90,7 +90,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/thumbnails/image/potw1236a.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -108,7 +108,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/thumbnails/image/potw1118a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -127,7 +127,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M006.JPG",
     commonName: "Butterfly Cluster",
     image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/M6a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -147,7 +147,7 @@ const messier = [
     commonName: "Ptolemy Cluster",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/The_star_cluster_Messier_7.jpg/1024px-The_star_cluster_Messier_7.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -167,7 +167,7 @@ const messier = [
     commonName: "Lagoon Nebula",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/heic1015a.jpg?itok=8wVvC-cM",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -187,7 +187,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/thumbnails/image/heic1205a.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -207,7 +207,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1225a.jpg?itok=P1fSJIbK",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -227,7 +227,7 @@ const messier = [
     commonName: "Wild Duck Cluster",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/1024px-Eso1430a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -247,7 +247,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1113a.jpg?itok=Y-_hLk2N",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -267,7 +267,7 @@ const messier = [
     commonName: "Great Globular Cluster in Hercules",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m13-xlarge_web.jpg?itok=JLaiobe3",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -287,7 +287,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/b/b2/Messier_object_014.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -307,7 +307,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/heic1321a.jpg?itok=9NoZkMyO",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -325,7 +325,7 @@ const messier = [
     commonName: "Eagle Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/1024px-Eagle_Nebula_from_ESO.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -345,7 +345,7 @@ const messier = [
     commonName: "Omega, Swan, Horseshoe, or Lobster Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/The_star_formation_region_Messier_17.jpg/1024px-The_star_formation_region_Messier_17.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -364,7 +364,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M018.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Messier18.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -384,7 +384,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m19.png?itok=ANnFY_4G",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -404,7 +404,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/trifid-neb-full_jpg.jpg?itok=2k3gb6yH",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -424,7 +424,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/2/28/Messier_object_021.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -444,7 +444,7 @@ const messier = [
     commonName: "Sagittarius Cluster",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Messier_22_Hubble_WikiSky.jpg/1024px-Messier_22_Hubble_WikiSky.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -464,7 +464,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/6/63/Messier_object_023.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -484,7 +484,7 @@ const messier = [
     commonName: "Small Sagittarius Star Cloud",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/c/c4/Messier_24_Colombari_crop_invert.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -504,7 +504,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Messier_object_025.jpg/1024px-Messier_object_025.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -524,7 +524,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Messier_26.jpg/1024px-Messier_26.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -544,7 +544,7 @@ const messier = [
     commonName: "Dumbbell Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/M27_-_Dumbbell_Nebula.jpg/1024px-M27_-_Dumbbell_Nebula.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -564,7 +564,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Nebulous%2C_but_no_nebula_Messier_28.jpg/1024px-Nebulous%2C_but_no_nebula_Messier_28.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -583,7 +583,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M029.JPG",
     commonName: "Cooling Tower",
     image: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Messier_29.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -603,7 +603,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Messier_30_Hubble_WikiSky.jpg/1024px-Messier_30_Hubble_WikiSky.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -622,7 +622,7 @@ const messier = [
     commonName: "Andromeda Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg/1024px-Andromeda_Galaxy_%28with_h-alpha%29.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -641,7 +641,7 @@ const messier = [
     commonName: "Small Andromeda Galaxy",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m32_acs_field2_3b_flat_gapfill_final-with-tag.jpg?itok=iGNeMEFl",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -661,7 +661,7 @@ const messier = [
     commonName: "Triangulum/Pinwheel Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/VST_snaps_a_very_detailed_view_of_the_Triangulum_Galaxy.jpg/800px-VST_snaps_a_very_detailed_view_of_the_Triangulum_Galaxy.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -681,7 +681,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/7/7e/M34_2mass_atlas.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -701,7 +701,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/M35atlas.jpg/1024px-M35atlas.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -720,7 +720,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M036.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/3/3d/M36a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -739,7 +739,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M037.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/46/M37a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -759,7 +759,7 @@ const messier = [
     commonName: "Starfish Cluster",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/M38_Open_Cluster.jpg/1024px-M38_Open_Cluster.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -778,7 +778,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M039.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/6/67/M39atlas.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -792,7 +792,7 @@ const messier = [
     commonName: "Winnecke-4",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/b/ba/Messier_object_40.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -812,7 +812,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Messier_041_2MASS.jpg/800px-Messier_041_2MASS.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -832,7 +832,7 @@ const messier = [
     commonName: "Orion Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1024px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -852,7 +852,7 @@ const messier = [
     commonName: "De Mairan's Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/M43_HST.jpg/1024px-M43_HST.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -871,7 +871,7 @@ const messier = [
     commonName: "Beehive Cluster or Praesepe",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Messier_44_2018.jpg/1024px-Messier_44_2018.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -885,7 +885,7 @@ const messier = [
     commonName: "Pleiades",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bob_Star_-_M45_Carranza_Field_%28by%29.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -904,7 +904,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M046.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/M46a.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -923,7 +923,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M047.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/55/M47a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -942,7 +942,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M048.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/6/66/M48a.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -962,7 +962,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m49.png?itok=ab2b9jy4",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -981,7 +981,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M050.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/M50a.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -1001,7 +1001,7 @@ const messier = [
     commonName: "Whirlpool Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/1024px-Messier51_sRGB.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1020,7 +1020,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M052.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/b/bc/M52atlas.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1040,7 +1040,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1140a.jpg?itok=wuepIV4t",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1060,7 +1060,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1145a.jpg?itok=2JSQdk-3",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1079,7 +1079,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M055.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Messier55.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1099,7 +1099,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1234a.jpg?itok=ABzbW8Nz",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1119,7 +1119,7 @@ const messier = [
     commonName: "Ring Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/M57_The_Ring_Nebula.JPG/1024px-M57_The_Ring_Nebula.JPG",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -1139,7 +1139,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/b/b0/M58s_%28visible%29.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1159,7 +1159,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Messier59_-_HST_-_Potw1921a.jpg/1024px-Messier59_-_HST_-_Potw1921a.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1179,7 +1179,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m60_and_ngc_4647.jpg?itok=pVNARGU-",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1199,7 +1199,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Messier61_-_ESO_-_Potw1901a.tif/lossy-page1-1024px-Messier61_-_ESO_-_Potw1901a.tif.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1219,7 +1219,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m62_0.jpg?itok=sNJvc00a",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1239,7 +1239,7 @@ const messier = [
     commonName: "Sunflower Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/M63s.jpg/1024px-M63s.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1259,7 +1259,7 @@ const messier = [
     commonName: "Black Eye Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Blackeyegalaxy.jpg/800px-Blackeyegalaxy.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1278,7 +1278,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M065.JPG",
     commonName: "Leo Triplet",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/47/M65.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1298,7 +1298,7 @@ const messier = [
     commonName: "Leo Triplet",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Phot-33c-03-fullres.jpg/1024px-Phot-33c-03-fullres.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1318,7 +1318,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/7/74/Messier_object_067.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1338,7 +1338,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1231a.jpg?itok=oXSd11fig",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1358,7 +1358,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1240a.jpg?itok=dchyktsU",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1378,7 +1378,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1215a.jpg?itok=n3NEFe49",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1398,7 +1398,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1018a.jpg?itok=IFN081LJ",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1418,7 +1418,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1001a.jpg?itok=-GuE5207",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1437,7 +1437,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/c/c2/Messier_073_2MASS.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -1457,7 +1457,7 @@ const messier = [
     commonName: "Phantom Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Messier_74_by_HST.jpg/1024px-Messier_74_by_HST.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1477,7 +1477,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m75_0.png?itok=3IsVI435",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1497,7 +1497,7 @@ const messier = [
     commonName: "Little Dumbbell Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/f/f0/M76-RL5-DDmin-Gamma-LRGB_883x628.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1517,7 +1517,7 @@ const messier = [
     commonName: "Cetus A",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/f/f5/M77_Galaxy_from_the_Mount_Lemmon_SkyCenter_Schulman_Telescope_courtesy_Adam_Block.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1537,7 +1537,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Messier_78.jpg/1024px-Messier_78.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1557,7 +1557,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m791343x1343.png?itok=FZwplCuW",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1577,7 +1577,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m80.jpg?itok=m7bDEe8k",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1597,7 +1597,7 @@ const messier = [
     commonName: "Bode's Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Messier_81_HST.jpg/1024px-Messier_81_HST.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1617,7 +1617,7 @@ const messier = [
     commonName: "Cigar Galaxy",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m82.jpg?itok=vhoNInCP",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1637,7 +1637,7 @@ const messier = [
     commonName: "Southern Pinwheel Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/M83_-_Southern_Pinwheel.jpg/1024px-M83_-_Southern_Pinwheel.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1657,7 +1657,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/7/7a/Messier_84_nucleus_Hubble.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1677,7 +1677,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m85_0.jpg?itok=JUpsaRfa",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1697,7 +1697,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m86.png?itok=crFZLfcg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1717,7 +1717,7 @@ const messier = [
     commonName: "Virgo A",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m87-full_jpg.jpg?itok=XqvbUq_t",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1737,7 +1737,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/M88s.jpg/1024px-M88s.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1757,7 +1757,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Messier89_-_HST_-_Potw1902a.tif/lossy-page1-1024px-Messier89_-_HST_-_Potw1902a.tif.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1777,7 +1777,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Messier90_-_SDSS_DR14_%28panorama%29.jpg/1024px-Messier90_-_SDSS_DR14_%28panorama%29.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1797,7 +1797,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/M91s.jpg/1024px-M91s.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1817,7 +1817,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1449a_0.jpg?itok=PqIogJPU",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -1837,7 +1837,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/f/f0/Messier_object_093.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1857,7 +1857,7 @@ const messier = [
     commonName: "Croc's Eye or Cat's Eye",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Messier_94.jpg/1024px-Messier_94.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1877,7 +1877,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/The_VLT_goes_lion_hunting.jpg/1024px-The_VLT_goes_lion_hunting.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1897,7 +1897,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/NGC_3368_ESO.jpg/1024px-NGC_3368_ESO.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1917,7 +1917,7 @@ const messier = [
     commonName: "Owl Nebula",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/M97-stargazer-obs.jpg/1024px-M97-stargazer-obs.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -1936,7 +1936,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M098.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/21/M-98.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1955,7 +1955,7 @@ const messier = [
     imageMap: "http://www.lasam.ca/messier/M099.JPG",
     commonName: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/e/eb/M99.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1975,7 +1975,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Messier_100_and_Supernova_SN_2006X.jpg/1024px-Messier_100_and_Supernova_SN_2006X.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -1995,7 +1995,7 @@ const messier = [
     commonName: "Pinwheel Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/M101_hires_STScI-PRC2006-10a.jpg/1024px-M101_hires_STScI-PRC2006-10a.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -2011,7 +2011,7 @@ const messier = [
     commonName: "Spindle Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Ngc5866_hst_big.png/800px-Ngc5866_hst_big.png",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -2031,7 +2031,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/0/06/Messier_object_103.jpg",
-    difficulty: "easy",
+    difficulty: "Easy",
     score: 5,
   },
   {
@@ -2051,7 +2051,7 @@ const messier = [
     commonName: "Sombrero Galaxy",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hi-res.jpg/1024px-M104_ngc4594_sombrero_galaxy_hi-res.jpg",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -2071,7 +2071,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Messier105_-_HST_-_Potw1901a.jpg/1024px-Messier105_-_HST_-_Potw1901a.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -2091,7 +2091,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/M106_-_Messier_106_Galaxy.jpg/1024px-M106_-_Messier_106_Galaxy.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -2111,7 +2111,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/potw1229a.jpg?itok=MIiwM0o1",
-    difficulty: "medium",
+    difficulty: "Medium",
     score: 15,
   },
   {
@@ -2131,7 +2131,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier108_-_SDSS_DR_14_%28panorama%29.jpg/1024px-Messier108_-_SDSS_DR_14_%28panorama%29.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -2151,7 +2151,7 @@ const messier = [
     commonName: "",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Messier109_-_SDSS_DR14_%28panorama%29.jpg/1024px-Messier109_-_SDSS_DR14_%28panorama%29.jpg",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
   {
@@ -2171,7 +2171,7 @@ const messier = [
     commonName: "",
     image:
       "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m110.png?itok=6wjqn0a-",
-    difficulty: "hard",
+    difficulty: "Hard",
     score: 30,
   },
 ];
