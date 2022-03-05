@@ -4,6 +4,7 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const saltRounds = 10;
+const {isAuthenticated} = require("../middleware/jwt.authenticated")
 
 //SIGN UP route
 
@@ -112,4 +113,11 @@ router.post("/login", (req, res, next) => {
   });
 });
 
+
+//VERIFY USER IS AUTHENTICATED route
+
+router.get("/verify", isAuthenticated, (req,res, next)=>{
+  console.log("this works");
+  res.status(200).json(req.payload);
+})
 module.exports = router;
