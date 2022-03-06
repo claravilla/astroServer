@@ -4,12 +4,13 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const saltRounds = 10;
-const {isAuthenticated} = require("../middleware/jwt.authenticated")
+const { isAuthenticated } = require("../middleware/jwt.authenticated");
 
 //SIGN UP route
 
 router.post("/signup", (req, res, next) => {
   const { username, email, password } = req.body;
+  console.log("route file");
 
   if (!username || !email || !password) {
     res.status(400).json({ error: "Please fill all required fields" });
@@ -101,11 +102,10 @@ router.post("/login", (req, res, next) => {
   });
 });
 
-
 //VERIFY USER IS AUTHENTICATED route
 
-router.get("/verify", isAuthenticated, (req,res, next)=>{
+router.get("/verify", isAuthenticated, (req, res, next) => {
   console.log("this works");
   res.status(200).json(req.payload);
-})
+});
 module.exports = router;
