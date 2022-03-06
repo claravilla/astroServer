@@ -47,7 +47,17 @@ router.post("/signup", (req, res, next) => {
             email,
             _id,
           };
-          res.status(201).json({ user: user });
+
+          //creating the token
+    
+          let token = jwt.sign(user, process.env.TOKEN, {
+            algorithm: "HS256",
+            expiresIn: "1d",
+          });
+    
+          res.status(200).json({ user: user, authToken: token });
+
+
         });
       });
     })
