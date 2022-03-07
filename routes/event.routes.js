@@ -56,8 +56,8 @@ router.post("/", (req, res, next) => {
 
 //GET EVENTS PER USER
 
-router.get("/", (req, res, next) => {
-  const { userId } = req.query;
+router.get("/:userId", (req, res, next) => {
+  const { userId } = req.params;
   Event.find({ userId: userId })
     .then((data) => {
       res.status(200).json(data);
