@@ -54,12 +54,10 @@ router.post("/", (req, res, next) => {
     });
 });
 
-//GET EVENTS
+//GET EVENTS PER USER
 
 router.get("/", (req, res, next) => {
   const { userId } = req.query;
-  console.log(userId);
-
   Event.find({ userId: userId })
     .then((data) => {
       res.status(200).json(data);
@@ -85,6 +83,23 @@ router.delete("/:id", (req, res, next) => {
       res.status(500).json({
         error:
           "Something went wrong while deleting your event, please try again",
+      });
+    });
+});
+
+//GET SINGLE EVENT
+
+router.get("/:id", (req, res, next) => {
+  const { id } = req.params;
+  console.log(id);
+  Event.findById({ _id: id })
+    .then((foundEvent) => {
+      res.status(200).json(foundEvent);
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).json({
+        error: "Something went wrong loading your event, please try again",
       });
     });
 });
