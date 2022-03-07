@@ -72,4 +72,68 @@ router.get("/", (req, res, next) => {
     });
 });
 
+//DELETE SINGLE EVENT
+
+router.delete("/:id", (req, res, next) => {
+  const { id } = req.params;
+  Event.findByIdAndDelete({ _id: id })
+    .then(() => {
+      res.status(200).json({ message: "Event has been deleted" });
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).json({
+        error:
+          "Something went wrong while deleting your event, please try again",
+      });
+    });
+});
+
+//EDIT SINGLE EVENT
+
+router.put("/:id", (req, res, next) => {
+  const { id } = req.params;
+  const {
+    name,
+    object,
+    time,
+    place,
+    observations,
+    season,
+    difficulty,
+    seen,
+    score,
+    ojectCatalogueId,
+    userId,
+  } = req.body;
+
+  Event.findByIdAndUpdate(
+    { _id: id },
+    {
+      name,
+      object,
+      time,
+      place,
+      observations,
+      season,
+      difficulty,
+      seen,
+      score,
+      ojectCatalogueId,
+      userId,
+    },
+    { new: true }
+  )
+    .then(() => {
+      res.status(200).json({ message: "Event has been updated" });
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).json({
+        error:
+          "Something went wrong while deleting your event, please try again",
+      });
+    });
+});
+
 module.exports = router;
