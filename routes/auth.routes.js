@@ -49,15 +49,13 @@ router.post("/signup", (req, res, next) => {
           };
 
           //creating the token
-    
+
           let token = jwt.sign(user, process.env.TOKEN, {
             algorithm: "HS256",
             expiresIn: "1d",
           });
-    
+
           res.status(200).json({ user: user, authToken: token });
-
-
         });
       });
     })
@@ -118,4 +116,5 @@ router.get("/verify", isAuthenticated, (req, res, next) => {
   console.log("this works");
   res.status(200).json(req.payload);
 });
+
 module.exports = router;

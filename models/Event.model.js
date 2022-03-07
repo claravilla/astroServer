@@ -11,11 +11,11 @@ const eventSchema = new Schema({
   place: String,
   observations: String,
   seen: Boolean,
-  notSeen: Boolean,
   ojectCatalogueId: String,
+  score: Number,
   userId: String,
 });
 
 const Event = model("Event", eventSchema);
 
-module.exports(Event);
+module.exports = Event;
