@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const mongoose = require("mongoose");
 const Event = require("../models/Event.model");
+const User = require("../models/User.model");
 
 // CREATE EVENT
 
@@ -34,11 +35,18 @@ router.post("/", (req, res, next) => {
     userId,
   })
     .then((newEvent) => {
+      return User.findByIdAndUpdate(
+        userId,
+        { $push: { events: newEvent._id } },
+        { new: true }
+      );
+    })
+    .then(() => {
       res.status(200).json({ message: "Event has been created" });
     })
     .catch((error) => {
       console.log(error);
-      res.status(500).json({ error: "Internal server error" });
+      res.status(500).json({ error: "Something went wrong, try again" });
     });
 });
 
