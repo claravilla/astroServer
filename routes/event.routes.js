@@ -8,6 +8,7 @@ const User = require("../models/User.model");
 router.post("/", (req, res, next) => {
   const {
     name,
+    object,
     time,
     place,
     observations,
@@ -26,6 +27,7 @@ router.post("/", (req, res, next) => {
 
   Event.create({
     name,
+    object,
     time,
     place,
     observations,
