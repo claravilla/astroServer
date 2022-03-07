@@ -54,11 +54,10 @@ router.post("/", (req, res, next) => {
     });
 });
 
-//GET EVENTS PER USER
+//GET EVENTS
 
-router.get("/:userId", (req, res, next) => {
-  const { userId } = req.params;
-  Event.find({ userId: userId })
+router.get("/", (req, res, next) => {
+  Event.find()
     .then((data) => {
       res.status(200).json(data);
     })
@@ -90,10 +89,12 @@ router.delete("/:id", (req, res, next) => {
 //GET SINGLE EVENT
 
 router.get("/:id", (req, res, next) => {
+  console.log("this works");
   const { id } = req.params;
   console.log(id);
   Event.findById({ _id: id })
     .then((foundEvent) => {
+      console.log(foundEvent);
       res.status(200).json(foundEvent);
     })
     .catch((error) => {
