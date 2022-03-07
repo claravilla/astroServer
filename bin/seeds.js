@@ -1,3 +1,4 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 const AstroObject = require("../models/AstroObject.model");
 

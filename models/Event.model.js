@@ -8,6 +8,7 @@ const eventSchema = new Schema({
   object: String,
   image: String,
   season: String,
+  difficulty: String,
   time: String,
   place: String,
   observations: String,
