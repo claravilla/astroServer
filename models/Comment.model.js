@@ -2,12 +2,16 @@ const { Schema, model } = require("mongoose");
 
 const commentSchema = new Schema(
   {
-    ojectCatalogueId: {
+    objectCatalogueId: {
       type: String,
       required: true,
     },
     username: String,
     text: {
+      type: String,
+      required: true,
+    },
+    date: {
       type: String,
       required: true,
     },
@@ -17,4 +21,4 @@ const commentSchema = new Schema(
 
 const Comment = model("Comment", commentSchema);
 
-module.export(Comment);
+module.exports = Comment;

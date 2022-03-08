@@ -62,48 +62,6 @@ router.post("/signup", async (req, res, next) => {
     console.log(error);
     res.status(500).json({ error: "Internal server error" });
   }
-
-  // User.findOne({ username: username })
-  //   .then((foundUser) => {
-  //     if (foundUser) {
-  //       res.status(400).json({ error: "Username already taken" });
-  //       return;
-  //     }
-  //     User.findOne({ email: email }).then((foundUser) => {
-  //       if (foundUser) {
-  //         res.status(400).json({ error: "Email already taken" });
-  //         return;
-  //       }
-
-  //       const salt = bcrypt.genSaltSync(saltRounds);
-  //       const hashedPassword = bcrypt.hashSync(password, salt);
-  //       return User.create({
-  //         username: username,
-  //         email: email,
-  //         password: hashedPassword,
-  //       }).then((newUser) => {
-  //         const { username, email, _id } = newUser;
-  //         const user = {
-  //           username,
-  //           email,
-  //           _id,
-  //         };
-
-  //         //creating the token
-
-  //         let token = jwt.sign(user, process.env.TOKEN, {
-  //           algorithm: "HS256",
-  //           expiresIn: "1d",
-  //         });
-
-  //         res.status(200).json({ user: user, authToken: token });
-  //       });
-  //     });
-  //   })
-  //   .catch((error) => {
-  //     console.log(error);
-  //     res.status(500).json({ error: "Internal server error" });
-  //   });
 });
 
 //LOGIN route
