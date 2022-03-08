@@ -21,6 +21,7 @@ router.get("/", (req, res, next) => {
 router.get("/:id", (req, res, next) => {
   const { id } = req.params;
   AstroObject.findById(id)
+    .populate("comments")
     .then((foundObject) => {
       if (foundObject) {
         console.log(foundObject);

@@ -3,8 +3,9 @@ const { Router } = require("express");
 const mongoose = require("mongoose");
 const AstroObject = require("../models/AstroObject.model");
 const Comment = require("../models/Comment.model");
+const { isAuthenticated } = require("../middleware/jwt.authenticated");
 
-//GET COMMENTS
+//GET ALL COMMENTS
 
 router.get("/", (req, res, next) => {
   Comment.find()
@@ -21,7 +22,7 @@ router.get("/", (req, res, next) => {
 
 //CREATE COMMENT
 
-router.post("/", (req, res, next) => {
+router.post("/", isAuthenticated, (req, res, next) => {
   const { objectCatalogueId, username, text, date } = req.body;
   if (!objectCatalogueId || !username || !text || !date) {
     res.status(400).json({ error: "Please fill all required fields" });
