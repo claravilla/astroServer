@@ -39,6 +39,11 @@ app.use("/api/events", isAuthenticated, EventRoutes);
 const CommentRoutes = require("./routes/comment.routes");
 app.use("/api/comments", CommentRoutes);
 
+//User endpoints
+
+const UserRoutes = require("./routes/user.routes");
+app.use("/api/users", UserRoutes);
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 

@@ -22,8 +22,14 @@ const userSchema = new Schema(
 
     comments: [{ type: Schema.Types.ObjectId, ref: "Comment" }],
 
-    totalSeen: Number,
-    score: Number,
+    totalSeen: {
+      type: Number,
+      default: 0,
+    },
+    score: {
+      type: Number,
+      default: 0,
+    },
   },
 
   {
