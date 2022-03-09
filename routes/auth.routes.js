@@ -59,7 +59,7 @@ router.post("/signup", async (req, res, next) => {
 
     res.status(200).json({ user: user, authToken: token });
   } catch (error) {
-    console.log(error);
+    next(error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
@@ -76,37 +76,42 @@ router.post("/login", (req, res, next) => {
 
   //check if email exists
 
-  User.findOne({ email: email }).then((foundUser) => {
-    if (!foundUser) {
-      res
-        .status(401)
-        .json({ message: "We couldn't log you in with those credentials" });
-      return;
-    }
+  User.findOne({ email: email })
+    .then((foundUser) => {
+      if (!foundUser) {
+        res
+          .status(401)
+          .json({ message: "We couldn't log you in with those credentials" });
+        return;
+      }
 
-    if (bcrypt.compareSync(password, foundUser.password)) {
-      const { username, email, _id } = foundUser;
-      //creating payload to be passed in the token
-      const payload = {
-        _id,
-        username,
-        email,
-      };
+      if (bcrypt.compareSync(password, foundUser.password)) {
+        const { username, email, _id } = foundUser;
+        //creating payload to be passed in the token
+        const payload = {
+          _id,
+          username,
+          email,
+        };
 
-      //creating the token
+        //creating the token
 
-      let token = jwt.sign(payload, process.env.TOKEN, {
-        algorithm: "HS256",
-        expiresIn: "1d",
-      });
+        let token = jwt.sign(payload, process.env.TOKEN, {
+          algorithm: "HS256",
+          expiresIn: "1d",
+        });
 
-      res.status(200).json({ authToken: token });
-    } else {
-      res
-        .status(401)
-        .json({ message: "We couldn't log you in with those credentials" });
-    }
-  });
+        res.status(200).json({ authToken: token });
+      } else {
+        res
+          .status(401)
+          .json({ message: "We couldn't log you in with those credentials" });
+      }
+    })
+    .catch((error) => {
+      next(error);
+      res.status(500).json({ error: "Something went wrong, please try again" });
+    });
 });
 
 //VERIFY USER IS AUTHENTICATED route

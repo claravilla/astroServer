@@ -49,7 +49,7 @@ router.post("/", (req, res, next) => {
       res.status(200).json({ message: "Event has been created" });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res.status(500).json({ error: "Something went wrong, try again" });
     });
 });
@@ -62,7 +62,7 @@ router.get("/", (req, res, next) => {
       res.status(200).json(data);
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res.status(500).json({
         error: "Sorry, we couldn't retrieve your events, please try again",
       });
@@ -78,7 +78,7 @@ router.delete("/:id", (req, res, next) => {
       res.status(200).json({ message: "Event has been deleted" });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res.status(500).json({
         error:
           "Something went wrong while deleting your event, please try again",
@@ -98,7 +98,7 @@ router.get("/:id", (req, res, next) => {
       res.status(200).json(foundEvent);
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res.status(500).json({
         error: "Something went wrong loading your event, please try again",
       });
@@ -144,7 +144,7 @@ router.put("/:id", (req, res, next) => {
       res.status(200).json({ message: "Event has been updated" });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res.status(500).json({
         error:
           "Something went wrong while deleting your event, please try again",

@@ -13,7 +13,7 @@ router.get("/", (req, res, next) => {
       res.status(200).json(data);
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res
         .status(500)
         .json({ error: "Sorry, we cannot display comments, please try again" });
@@ -30,7 +30,6 @@ router.post("/", isAuthenticated, (req, res, next) => {
   }
   Comment.create({ objectCatalogueId, username, text, date })
     .then((newComment) => {
-      console.log(newComment.objectCatalogueId);
       return AstroObject.findByIdAndUpdate(
         newComment.objectCatalogueId,
         { $push: { comments: newComment._id } },
@@ -41,7 +40,7 @@ router.post("/", isAuthenticated, (req, res, next) => {
       res.status(200).json({ message: `new comment created` });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
       res.status(500).json({ error: "Internal server error" });
     });
 });

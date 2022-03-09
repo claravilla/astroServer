@@ -10,7 +10,6 @@ router.get("/", (req, res, next) => {
       res.status("200").json(data);
     })
     .catch((error) => {
-      console.log(error);
       next(error);
       res.json(error);
     });
@@ -24,13 +23,13 @@ router.get("/:id", (req, res, next) => {
     .populate("comments")
     .then((foundObject) => {
       if (foundObject) {
-        console.log(foundObject);
         res.status("200").json(foundObject);
       } else {
         res.status("200").json({ message: "Object not found" });
       }
     })
     .catch((error) => {
+      next(error);
       res.json(error);
     });
 });
