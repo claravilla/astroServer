@@ -9,6 +9,7 @@ router.get("/", async (req, res, next) => {
     const foundUsers = await User.find();
     const users = foundUsers.map((eachUser) => {
       return {
+        id: eachUser._id,
         username: eachUser.username,
         totalSeen: eachUser.totalSeen,
         score: eachUser.score,
