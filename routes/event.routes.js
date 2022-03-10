@@ -99,7 +99,6 @@ router.get("/:id", (req, res, next) => {
   const { id } = req.params;
   Event.findById({ _id: id })
     .then((foundEvent) => {
-      console.log(foundEvent);
       res.status(200).json(foundEvent);
     })
     .catch((error) => {
@@ -146,11 +145,9 @@ router.put("/:id", (req, res, next) => {
     { new: true }
   )
     .then((updatedEvent) => {
-      console.log("this is the updated event: " + updatedEvent.id);
       updateUserScores(updatedEvent.userId);
     })
     .then((updatedUser) => {
-      console.log(updatedUser);
       res.status(200).json({ message: "Event has been updated" });
     })
     .catch((error) => {
@@ -172,7 +169,6 @@ const updateUserScores = async (userId) => {
     const userEvents = events.filter((eachEvent) => {
       return eachEvent.userId === userId;
     });
-    console.log("those are the events in the update score: " + userEvents);
 
     let seenObjectsId = [];
 
@@ -198,39 +194,4 @@ const updateUserScores = async (userId) => {
   }
 };
 
-// const updateUserScores = (userId) => {
-//   Event.find()
-//     .then((foundEvents) => {
-//       const userEvents = foundEvents.filter((eachEvent) => {
-//         return eachEvent.userId === userId;
-//       });
-
-//       const score = 0;
-//       const totalSeen = 0;
-//       let seenObjectsId = [];
-
-//       userEvents.forEach((eachEvent) => {
-//         if (eachEvent.seen && eachEvent.objectCatalogueId !== "") {
-//           if (seenObjectsId.includes(eachEvent.objectCatalogueId) === false) {
-//             score += eachEvent.score;
-//             totalSeen++;
-//             seenObjectsId.push(eachEvent.objectCatalogueId);
-//           }
-//         }
-//       });
-
-//       return User.findByIdAndUpdate(
-//         { _id: userId },
-//         { totalSeen: totalSeen, score: score },
-//         { new: true }
-//       );
-//     })
-//     .then((updateUser) => {
-//       console.log(updateUser);
-//     })
-
-//     .catch((error) => {
-//       return error;
-//     });
-// };
 module.exports = router;
