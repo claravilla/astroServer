@@ -70,7 +70,7 @@ router.post("/login", (req, res, next) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    res.status(400).json({ message: "Please provide all mandatory fields" });
+    res.status(400).json({ error: "Please provide all mandatory fields" });
     return;
   }
 
@@ -81,7 +81,7 @@ router.post("/login", (req, res, next) => {
       if (!foundUser) {
         res
           .status(401)
-          .json({ message: "We couldn't log you in with those credentials" });
+          .json({ error: "We couldn't log you in with those credentials" });
         return;
       }
 
@@ -105,7 +105,7 @@ router.post("/login", (req, res, next) => {
       } else {
         res
           .status(401)
-          .json({ message: "We couldn't log you in with those credentials" });
+          .json({ error: "We couldn't log you in with those credentials" });
       }
     })
     .catch((error) => {
