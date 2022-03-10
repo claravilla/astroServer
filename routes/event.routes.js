@@ -16,7 +16,7 @@ router.post("/", (req, res, next) => {
     difficulty,
     seen,
     score,
-    ojectCatalogueId,
+    objectCatalogueId,
     userId,
   } = req.body;
 
@@ -35,7 +35,7 @@ router.post("/", (req, res, next) => {
     difficulty,
     seen,
     score,
-    ojectCatalogueId,
+    objectCatalogueId,
     userId,
   })
     .then((newEvent) => {
@@ -44,6 +44,9 @@ router.post("/", (req, res, next) => {
         { $push: { events: newEvent._id } },
         { new: true }
       );
+    })
+    .then((updatedUser) => {
+      updateUserScores(updatedUser._id);
     })
     .then(() => {
       res.status(200).json({ message: "Event has been created" });
@@ -74,6 +77,9 @@ router.get("/", (req, res, next) => {
 router.delete("/:id", (req, res, next) => {
   const { id } = req.params;
   Event.findByIdAndDelete({ _id: id })
+    .then((deletedEvent) => {
+      updateUserScores(deletedEvent.userId);
+    })
     .then(() => {
       res.status(200).json({ message: "Event has been deleted" });
     })
@@ -89,9 +95,7 @@ router.delete("/:id", (req, res, next) => {
 //GET SINGLE EVENT
 
 router.get("/:id", (req, res, next) => {
-  console.log("this works");
   const { id } = req.params;
-  console.log(id);
   Event.findById({ _id: id })
     .then((foundEvent) => {
       console.log(foundEvent);
@@ -119,7 +123,7 @@ router.put("/:id", (req, res, next) => {
     difficulty,
     seen,
     score,
-    ojectCatalogueId,
+    objectCatalogueId,
     userId,
   } = req.body;
 
@@ -135,11 +139,14 @@ router.put("/:id", (req, res, next) => {
       difficulty,
       seen,
       score,
-      ojectCatalogueId,
+      objectCatalogueId,
       userId,
     },
     { new: true }
   )
+    .then((updateEvent) => {
+      updateUserScores(updateEvent.userId);
+    })
     .then(() => {
       res.status(200).json({ message: "Event has been updated" });
     })
@@ -152,4 +159,74 @@ router.put("/:id", (req, res, next) => {
     });
 });
 
+//FUNCTION TO UPDATE THE USER SCORES WHEN AN EVENT IS ADDED/EDITED/DELETE
+
+const updateUserScores = async (userId) => {
+  try {
+    const events = await Event.find();
+    let score = 0;
+    let totalSeen = 0;
+    const userEvents = events.filter((eachEvent) => {
+      return eachEvent.userId === userId;
+    });
+
+    let seenObjectsId = [];
+
+    userEvents.forEach((eachEvent) => {
+      if (eachEvent.seen && eachEvent.objectCatalogueId !== "") {
+        if (seenObjectsId.includes(eachEvent.objectCatalogueId) === false) {
+          score += eachEvent.score;
+          totalSeen++;
+          seenObjectsId.push(eachEvent.objectCatalogueId);
+        }
+      }
+    });
+
+    const updateUser = await User.findByIdAndUpdate(
+      { _id: userId },
+      { totalSeen: totalSeen, score: score },
+      { new: true }
+    );
+
+    return updateUser;
+  } catch (error) {
+    return error;
+  }
+};
+
+// const updateUserScores = (userId) => {
+//   Event.find()
+//     .then((foundEvents) => {
+//       const userEvents = foundEvents.filter((eachEvent) => {
+//         return eachEvent.userId === userId;
+//       });
+
+//       const score = 0;
+//       const totalSeen = 0;
+//       let seenObjectsId = [];
+
+//       userEvents.forEach((eachEvent) => {
+//         if (eachEvent.seen && eachEvent.objectCatalogueId !== "") {
+//           if (seenObjectsId.includes(eachEvent.objectCatalogueId) === false) {
+//             score += eachEvent.score;
+//             totalSeen++;
+//             seenObjectsId.push(eachEvent.objectCatalogueId);
+//           }
+//         }
+//       });
+
+//       return User.findByIdAndUpdate(
+//         { _id: userId },
+//         { totalSeen: totalSeen, score: score },
+//         { new: true }
+//       );
+//     })
+//     .then((updateUser) => {
+//       console.log(updateUser);
+//     })
+
+//     .catch((error) => {
+//       return error;
+//     });
+// };
 module.exports = router;

@@ -13,7 +13,7 @@ const eventSchema = new Schema({
   place: String,
   observations: String,
   seen: Boolean,
-  ojectCatalogueId: String,
+  objectCatalogueId: String,
   score: Number,
   userId: String,
 });
