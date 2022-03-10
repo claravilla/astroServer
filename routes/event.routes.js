@@ -46,7 +46,8 @@ router.post("/", (req, res, next) => {
       );
     })
     .then((updatedUser) => {
-      updateUserScores(updatedUser._id);
+      const userId = updatedUser._id.toString();
+      updateUserScores(userId);
     })
     .then(() => {
       res.status(200).json({ message: "Event has been created" });
@@ -144,10 +145,12 @@ router.put("/:id", (req, res, next) => {
     },
     { new: true }
   )
-    .then((updateEvent) => {
-      updateUserScores(updateEvent.userId);
+    .then((updatedEvent) => {
+      console.log("this is the updated event: " + updatedEvent.id);
+      updateUserScores(updatedEvent.userId);
     })
-    .then(() => {
+    .then((updatedUser) => {
+      console.log(updatedUser);
       res.status(200).json({ message: "Event has been updated" });
     })
     .catch((error) => {
@@ -169,6 +172,7 @@ const updateUserScores = async (userId) => {
     const userEvents = events.filter((eachEvent) => {
       return eachEvent.userId === userId;
     });
+    console.log("those are the events in the update score: " + userEvents);
 
     let seenObjectsId = [];
 
@@ -182,13 +186,13 @@ const updateUserScores = async (userId) => {
       }
     });
 
-    const updateUser = await User.findByIdAndUpdate(
+    const updatedUser = await User.findByIdAndUpdate(
       { _id: userId },
       { totalSeen: totalSeen, score: score },
       { new: true }
     );
 
-    return updateUser;
+    return updatedUser;
   } catch (error) {
     return error;
   }
