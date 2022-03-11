@@ -1,6 +1,6 @@
 # ASTRO WATCHLIST
 
-REST api to support a [React App](https://github.com/claravilla/astro-client) that provides:
+REST API to support a [React App](https://github.com/claravilla/astro-client) that provides:
 
 - Messier Catalogue Data
 - User Creation and Auth
@@ -75,19 +75,19 @@ REST api to support a [React App](https://github.com/claravilla/astro-client) th
 
 ### USER STORIES
 
-**As a developer** **I want to** be able request all data from the astro object catalogue **so** I can display them in my app.
-**As a developer** **I want to** be able to request details for just one astro object **so** I can create an Object details page without having to filter.
-**As a developer** **I want to** be able create an new event in the API **so** I can build a form in my app for my users.
-**As a developer** **I want to** be able to get all events **so** I can filter them and display the right ones to my user in my app.
-**As a developer** **I want to** be able to get details of a single event **so** I can easily display them to the user in my app.
-**As a developer** **I want to** be able to update an event in the API **so** the user in my app can modify stored events.
-**As a developer** **I want to** be able to delete a single event in the API **so** the user in my app can have a cleaner account.
-**As a developer** **I want to** be able to request all comments **so** I can display them in my app.
-**As a developer** **I want to** be able to create anew comment in the API **so** the users in my app can write their own comments and see them saved.
-**As a developer** **I want to** be able to create new user **so** the users of my app can create their account and events.
-**As a developer** **I want to** be able to login user **so** I can be sure the user in my app can only access their account and their events.
-**As a developer** **I want to** be able to verify if a token is valid **so** I can protect my routes.
-**As a developer** **I want to** be able to get all the users of the app **so** I can use the data to create a leader board.
+- **As a developer** **I want to** be able request all data from the astro objects catalogue **so** I can display them in my app.
+- **As a developer** **I want to** be able to request details for just one astro object **so** I can create an object details page without having to filter.
+- **As a developer** **I want to** be able create an new event in the API **so** the users of my app can create their own watch events.
+- **As a developer** **I want to** be able to get all events **so** I can filter them and display the right ones to the user of my app.
+- **As a developer** **I want to** be able to get details of a single event **so** I can easily display them to the user in my app.
+- **As a developer** **I want to** be able to update an event in the API **so** the user of my app can modify stored events.
+- **As a developer** **I want to** be able to delete a single event in the API **so** the user of my app can remove events no longer relevant.
+- **As a developer** **I want to** be able to request all comments **so** I can display them in my app.
+- **As a developer** **I want to** be able to create anew comment in the API **so** the users of my app can write their own comments and see them saved.
+- **As a developer** **I want to** be able to create new user **so** the users of my app can create their account and events.
+- **As a developer** **I want to** be able to login user **so** I can be sure the user of my app can only access their account and their events.
+- **As a developer** **I want to** be able to verify if a token is valid **so** I can protect my routes.
+- **As a developer** **I want to** be able to get all the users of the app **so** I can use the data to create a leader board.
 
 ---
 
